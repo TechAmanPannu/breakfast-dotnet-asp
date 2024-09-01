@@ -1,6 +1,7 @@
 
 using Microsoft.AspNetCore.Mvc;
 using BuberBreakfast.Contracts.Breakfast;
+using BuberBreakfast.Services;
 
 namespace BuberBreakfast.Controllers;
 
@@ -9,20 +10,24 @@ namespace BuberBreakfast.Controllers;
 public class BreakFastController : ControllerBase {
 
  private readonly ILogger<BreakFastController> logger;
-    public BreakFastController(ILogger<BreakFastController> logger)
+
+ private readonly BreakFastService breakFastService;
+
+    public BreakFastController(ILogger<BreakFastController> logger, BreakFastService breakFastService)
     {
         this.logger = logger;
+        this.breakFastService = breakFastService;
     }
 
  [HttpPost]
- public IActionResult createBreakFast(CreateBreakFastRequest createBreakFastRequest) {
+ public async Task<IActionResult> createBreakFast(CreateBreakFastRequest createBreakFastRequest) {
         
-        return Ok(createBreakFastRequest);
+        return Ok(await breakFastService.createBreakFast(createBreakFastRequest));
  }
 
  [HttpGet]
  public IActionResult getBreakFastById() {
-        return Ok(new Guid());
+        return Ok(Guid.NewGuid());
  }
 
 }

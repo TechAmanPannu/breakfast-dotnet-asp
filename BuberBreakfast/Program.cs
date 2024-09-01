@@ -1,3 +1,6 @@
+using BuberBreakfast.Services;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +10,15 @@ builder.Services.AddSwaggerGen();
 
 // Add services to the container.
 builder.Services.AddControllers();
+
+// Register the concrete service
+builder.Services.AddScoped<BreakFastService>();
+
+// Configure DbContext with PostgreSQL
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")) .EnableSensitiveDataLogging()
+                   .LogTo(Console.WriteLine, LogLevel.Information));
+
 
 var app = builder.Build();
 

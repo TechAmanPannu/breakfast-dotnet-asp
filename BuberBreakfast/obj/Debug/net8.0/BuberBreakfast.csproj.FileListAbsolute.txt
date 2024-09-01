@@ -5,11 +5,19 @@
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.runtimeconfig.json
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.pdb
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Lombok.NET.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Npgsql.dll
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.Contracts.dll
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.Contracts.pdb
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.csproj.AssemblyReference.cache
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.GeneratedMSBuildEditorConfig.editorconfig
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.AssemblyInfoInputs.cache
@@ -31,6 +39,3 @@
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.pdb
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.genruntimeconfig.cache
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/ref/BuberBreakfast.dll
-/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.Contracts.dll
-/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.Contracts.pdb
-/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Lombok.NET.dll
