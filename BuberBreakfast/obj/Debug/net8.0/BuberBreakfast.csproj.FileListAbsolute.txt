@@ -40,3 +40,4 @@
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.pdb
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.genruntimeconfig.cache
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/ref/BuberBreakfast.dll
+/Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.sourcelink.json
