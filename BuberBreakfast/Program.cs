@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddAutoMapper(typeof(BreakFastMapper));
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -18,6 +19,7 @@ builder.Services.AddScoped<BreakFastService>();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")) .EnableSensitiveDataLogging()
                    .LogTo(Console.WriteLine, LogLevel.Information));
+
 
 
 var app = builder.Build();

@@ -105,6 +105,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Lombok.NET": {
               "target": "Package",
               "version": "[2.4.0, )"

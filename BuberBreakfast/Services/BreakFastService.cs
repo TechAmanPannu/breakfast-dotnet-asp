@@ -1,4 +1,5 @@
 
+using AutoMapper;
 using BuberBreakfast.Contracts.Breakfast;
 using BuberBreakfast.Entities;
 
@@ -7,23 +8,17 @@ namespace BuberBreakfast.Services;
 public class BreakFastService {
 
     private readonly AppDbContext dbContext;
+    private readonly IMapper mapper;
 
-    public BreakFastService(AppDbContext dbContext) {
+    public BreakFastService(AppDbContext dbContext, IMapper mapper) {
         this.dbContext = dbContext;
+        this.mapper = mapper;
     }
     
     public  async Task<BreakFastResponse> createBreakFast(CreateBreakFastRequest createBreakFastRequest) {
     
         
-         var breakfast = new Breakfast
-        {
-            Name = createBreakFastRequest.Name,
-            Description = createBreakFastRequest.Description,
-            StartDateTime =  createBreakFastRequest.StartDateTime.ToUniversalTime(),
-            EndDateTime = createBreakFastRequest.EndDateTime.ToUniversalTime(),
-            Uuid = Guid.NewGuid()
-        };
-
+        var breakfast = mapper.Map<Breakfast>(createBreakFastRequest);
 
         dbContext.Add(breakfast);
         await dbContext.SaveChangesAsync();

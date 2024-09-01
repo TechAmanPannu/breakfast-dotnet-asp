@@ -21,7 +21,6 @@ public class BreakFastController : ControllerBase {
 
  [HttpPost]
  public async Task<IActionResult> createBreakFast(CreateBreakFastRequest createBreakFastRequest) {
-        
         return Ok(await breakFastService.createBreakFast(createBreakFastRequest));
  }
 
