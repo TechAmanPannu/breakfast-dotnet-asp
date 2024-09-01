@@ -9,19 +9,17 @@ namespace BuberBreakfast.Controllers;
 [Route("api/breakfasts")]
 public class BreakFastController : ControllerBase {
 
- private readonly ILogger<BreakFastController> logger;
+ private readonly BreakFastService _breakFastService;
 
- private readonly BreakFastService breakFastService;
-
-    public BreakFastController(ILogger<BreakFastController> logger, BreakFastService breakFastService)
+    public BreakFastController(BreakFastService breakFastService)
     {
-        this.logger = logger;
-        this.breakFastService = breakFastService;
+        this._breakFastService = breakFastService;
     }
 
- [HttpPost]
+
+    [HttpPost]
  public async Task<IActionResult> createBreakFast(CreateBreakFastRequest createBreakFastRequest) {
-        return Ok(await breakFastService.createBreakFast(createBreakFastRequest));
+        return Ok(await _breakFastService.createBreakFast(createBreakFastRequest));
  }
 
  [HttpGet]
