@@ -1,9 +1,11 @@
 # Ignore the build directories
 /BuberBreakfast/bin/
 /BuberBreakfast/obj/
+/BuberBreakfast/obj/Debug/
 
 /BuberBreakfast.Contracts/bin/
 /BuberBreakfast.Contracts/obj/
+/BuberBreakfast.Contracts/obj/Debug/
 
 # Other ignores
 *.log
