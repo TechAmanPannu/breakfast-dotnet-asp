@@ -17,8 +17,7 @@ builder.Services.AddScoped<BreakFastService>();
 
 // Configure DbContext with PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")) .EnableSensitiveDataLogging()
-                   .LogTo(Console.WriteLine, LogLevel.Information));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 
 

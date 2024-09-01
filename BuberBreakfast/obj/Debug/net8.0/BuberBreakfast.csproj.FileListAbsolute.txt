@@ -5,6 +5,7 @@
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.runtimeconfig.json
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/BuberBreakfast.pdb
+/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/AutoMapper.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Lombok.NET.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
@@ -39,4 +40,3 @@
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.pdb
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/BuberBreakfast.genruntimeconfig.cache
 /Users/amandeep/BuberBreakfast/BuberBreakfast/obj/Debug/net8.0/ref/BuberBreakfast.dll
-/Users/amandeep/BuberBreakfast/BuberBreakfast/bin/Debug/net8.0/AutoMapper.dll
