@@ -2,8 +2,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BuberBreakfast.Contracts.Breakfast
 {
-    public class CreateBreakFastRequest {
-        
+    public class CreateBreakFastRequest
+    {
+
         [Required]
         [StringLength(100)]
         public string Name { get; set; } = string.Empty;

@@ -1,8 +1,9 @@
 namespace BuberBreakfast.Contracts.Breakfast
 {
 
-    
-public class BreakFastResponse {
+
+    public class BreakFastResponse
+    {
 
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
@@ -14,5 +15,5 @@ public class BreakFastResponse {
 
     }
 
-    
+
 }

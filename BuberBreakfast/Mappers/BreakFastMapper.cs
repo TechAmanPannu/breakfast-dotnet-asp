@@ -9,7 +9,7 @@ public class BreakFastMapper : Profile
         CreateMap<CreateBreakFastRequest, Breakfast>()
         .ForMember(dest => dest.StartDateTime, opt => opt.MapFrom(src => src.StartDateTime.ToUniversalTime()))
         .ForMember(dest => dest.EndDateTime, opt => opt.MapFrom(src => src.EndDateTime.ToUniversalTime()))
-        .AfterMap((src, dest) => 
+        .AfterMap((src, dest) =>
             {
                 // Set a new Guid for Id if it hasn't been set
                 if (dest.Uuid == Guid.Empty)
@@ -19,7 +19,7 @@ public class BreakFastMapper : Profile
             });
 
         CreateMap<Breakfast, BreakFastResponse>()
-        .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Uuid));    
+        .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Uuid));
     }
 
 

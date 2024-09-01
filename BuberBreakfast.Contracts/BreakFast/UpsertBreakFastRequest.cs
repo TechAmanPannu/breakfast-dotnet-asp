@@ -1,6 +1,7 @@
 namespace BuberBreakfast.Contracts.Breakfast
 {
-    public class UpsertBreakFastRequest {
+    public class UpsertBreakFastRequest
+    {
         private string Name { get; set; } = string.Empty;
         private string Description { get; set; } = string.Empty;
         private DateTime StartDateTime { get; set; }

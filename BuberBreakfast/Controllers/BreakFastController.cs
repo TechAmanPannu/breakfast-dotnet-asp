@@ -7,24 +7,27 @@ namespace BuberBreakfast.Controllers;
 
 [ApiController]
 [Route("api/breakfasts")]
-public class BreakFastController : ControllerBase {
+public class BreakFastController : ControllerBase
+{
 
- private readonly BreakFastService _breakFastService;
+       private readonly BreakFastService _breakFastService;
 
-    public BreakFastController(BreakFastService breakFastService)
-    {
-        this._breakFastService = breakFastService;
-    }
+       public BreakFastController(BreakFastService breakFastService)
+       {
+              this._breakFastService = breakFastService;
+       }
 
 
-    [HttpPost]
- public async Task<IActionResult> createBreakFast(CreateBreakFastRequest createBreakFastRequest) {
-        return Ok(await _breakFastService.createBreakFast(createBreakFastRequest));
- }
+       [HttpPost]
+       public async Task<IActionResult> createBreakFast(CreateBreakFastRequest createBreakFastRequest)
+       {
+              return Ok(await _breakFastService.createBreakFast(createBreakFastRequest));
+       }
 
- [HttpGet]
- public IActionResult getBreakFastById() {
-        return Ok(Guid.NewGuid());
- }
+       [HttpGet]
+       public IActionResult getBreakFastById()
+       {
+              return Ok(Guid.NewGuid());
+       }
 
 }
