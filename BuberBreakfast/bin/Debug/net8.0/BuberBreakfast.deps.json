@@ -9,11 +9,20 @@
       "BuberBreakfast/1.0.0": {
         "dependencies": {
           "BuberBreakfast.Contracts": "1.0.0",
+          "Lombok.NET": "2.4.0",
           "Microsoft.AspNetCore.OpenApi": "8.0.8",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
           "BuberBreakfast.dll": {}
+        }
+      },
+      "Lombok.NET/2.4.0": {
+        "runtime": {
+          "lib/netstandard2.0/Lombok.NET.dll": {
+            "assemblyVersion": "2.4.0.0",
+            "fileVersion": "2.4.0.0"
+          }
         }
       },
       "Microsoft.AspNetCore.OpenApi/8.0.8": {
@@ -89,6 +98,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Lombok.NET/2.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cIN9lzSyP0hAV6qkPAhAxXQS1NDbKOUEH5FXom92cePSLQeTYMiBpIbZc0nITtTwkwaAGUYe9nvi8jO3qYKw4g==",
+      "path": "lombok.net/2.4.0",
+      "hashPath": "lombok.net.2.4.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/8.0.8": {
       "type": "package",

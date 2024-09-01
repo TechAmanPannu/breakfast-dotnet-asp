@@ -8,8 +8,15 @@ namespace BuberBreakfast.Controllers;
 [Route("api/breakfasts")]
 public class BreakFastController : ControllerBase {
 
+ private readonly ILogger<BreakFastController> logger;
+    public BreakFastController(ILogger<BreakFastController> logger)
+    {
+        this.logger = logger;
+    }
+
  [HttpPost]
  public IActionResult createBreakFast(CreateBreakFastRequest createBreakFastRequest) {
+        
         return Ok(createBreakFastRequest);
  }
 

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "QVsCi3bcF94=",
+  "dgSpecHash": "P2U8gK+SFJk=",
   "success": true,
   "projectFilePath": "/Users/amandeep/BuberBreakfast/BuberBreakfast/BuberBreakfast.csproj",
   "expectedPackageFiles": [
+    "/Users/amandeep/.nuget/packages/lombok.net/2.4.0/lombok.net.2.4.0.nupkg.sha512",
     "/Users/amandeep/.nuget/packages/microsoft.aspnetcore.openapi/8.0.8/microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",
     "/Users/amandeep/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/amandeep/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
