@@ -1,0 +1,11 @@
+# Ignore the build directories
+/BuberBreakfast/bin/
+/BuberBreakfast/obj/
+
+/BuberBreakfast.Contracts/bin/
+/BuberBreakfast.Contracts/obj/
+
+# Other ignores
+*.log
+*.swp
+*.tmp
