@@ -1,3 +1,4 @@
+using BuberBreakfast.Excetions;
 using BuberBreakfast.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(BreakFastMapper));
+
+builder.Services.AddControllers(options =>{ options.Filters.Add<GlobalExceptionFilter>();});
 
 // Add services to the container.
 builder.Services.AddControllers();

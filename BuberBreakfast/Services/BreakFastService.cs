@@ -2,6 +2,7 @@
 using AutoMapper;
 using BuberBreakfast.Contracts.Breakfast;
 using BuberBreakfast.Entities;
+using BuberBreakfast.Excetions;
 
 namespace BuberBreakfast.Services;
 
@@ -19,12 +20,17 @@ public class BreakFastService
         this._logger = logger;
     }
 
-    public async Task<BreakFastResponse> createBreakFast(CreateBreakFastRequest createBreakFastRequest)
+    public async Task<BreakFastResponse> CreateBreakFast(CreateBreakFastRequest createBreakFastRequest)
     {
         var breakfast = _mapper.Map<Breakfast>(createBreakFastRequest);
         _dbContext.Add(breakfast);
         await _dbContext.SaveChangesAsync();
         _logger.LogInformation("Saved breakfast successfully : {}", breakfast.Uuid);
         return _mapper.Map<BreakFastResponse>(breakfast);
+    }
+
+public BreakFastResponse GetById(string id) {
+    
+        throw new EntityNotFoundException("Not Found");
     }
 }

@@ -14,20 +14,20 @@ public class BreakFastController : ControllerBase
 
        public BreakFastController(BreakFastService breakFastService)
        {
-              this._breakFastService = breakFastService;
+              _breakFastService = breakFastService;
        }
 
 
        [HttpPost]
-       public async Task<IActionResult> createBreakFast(CreateBreakFastRequest createBreakFastRequest)
+       public async Task<IActionResult> CreateBreakFast(CreateBreakFastRequest createBreakFastRequest)
        {
-              return Ok(await _breakFastService.createBreakFast(createBreakFastRequest));
+              return Ok(await _breakFastService.CreateBreakFast(createBreakFastRequest));
        }
 
-       [HttpGet]
-       public IActionResult getBreakFastById()
+       [HttpGet("{id}")]
+       public IActionResult GetBreakFastById(string id)
        {
-              return Ok(Guid.NewGuid());
+              return Ok(_breakFastService.GetById(id));
        }
 
 }
