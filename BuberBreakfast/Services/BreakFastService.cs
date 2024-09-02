@@ -29,8 +29,9 @@ public class BreakFastService
         return _mapper.Map<BreakFastResponse>(breakfast);
     }
 
-public BreakFastResponse GetById(string id) {
-    
+    public BreakFastResponse GetById(string id)
+    {
+
         throw new EntityNotFoundException("Not Found");
     }
 }
