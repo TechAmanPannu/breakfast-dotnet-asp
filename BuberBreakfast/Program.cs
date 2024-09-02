@@ -16,7 +16,7 @@ builder.Services.AddControllers(options =>{ options.Filters.Add<GlobalExceptionF
 builder.Services.AddControllers();
 
 // Register the concrete service
-builder.Services.AddScoped<BreakFastService>();
+builder.Services.AddSingleton<BreakFastService>();
 
 // Configure DbContext with PostgreSQL
 builder.Services.AddDbContext<AppDbContext>(options =>

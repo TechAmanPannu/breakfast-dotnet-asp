@@ -9,13 +9,13 @@ namespace BuberBreakfast.Services;
 public class BreakFastService
 {
 
-    private readonly AppDbContext _dbContext;
+    private readonly IServiceProvider _serviceProvider;
     private readonly IMapper _mapper;
     private readonly ILogger<BreakFastService> _logger;
 
-    public BreakFastService(AppDbContext dbContext, IMapper mapper, ILogger<BreakFastService> logger)
+    public BreakFastService(IServiceProvider serviceProvider, IMapper mapper, ILogger<BreakFastService> logger)
     {
-        this._dbContext = dbContext;
+        this._serviceProvider = serviceProvider;
         this._mapper = mapper;
         this._logger = logger;
     }
@@ -23,9 +23,15 @@ public class BreakFastService
     public async Task<BreakFastResponse> CreateBreakFast(CreateBreakFastRequest createBreakFastRequest)
     {
         var breakfast = _mapper.Map<Breakfast>(createBreakFastRequest);
-        _dbContext.Add(breakfast);
-        await _dbContext.SaveChangesAsync();
-        _logger.LogInformation("Saved breakfast successfully : {}", breakfast.Uuid);
+
+        using (var scope = _serviceProvider.CreateScope())
+        {
+            var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            dbContext.Add(breakfast);
+            await dbContext.SaveChangesAsync();
+            _logger.LogInformation("Breakfast saved successfully : {}", breakfast.Uuid);
+        }
+
         return _mapper.Map<BreakFastResponse>(breakfast);
     }
 
